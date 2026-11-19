@@ -113,7 +113,7 @@ jobs:
           bWFpbi9qYXZhL3B0L3ZhbHBpeC9taW5pL01pbmkuamF2YVBLBQYAAAAACAAIAFwCAAA2GAAAAAA=
           VALPIX
           unzip -q projeto.zip
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - run: sdkmanager 'platforms;android-34' 'build-tools;34.0.0'
       - run: gradle --no-daemon assembleDebug
       - uses: actions/upload-artifact@v4
